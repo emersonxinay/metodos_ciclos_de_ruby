@@ -4,10 +4,19 @@
 # del ciclo.
 
 # n = ARGV[0].to_i
-n = 5
+# n = 5
+# suma = 0
+# n.times do |i|
+#   suma += 2 * (i + 1)
+#   puts "#{i} : suma: #{suma}"
+# end
+# puts " suma final : #{suma}"
+
+# --- suma de pares 
+n = ARGV[0].to_i
 suma = 0
 n.times do |i|
-  suma += 2 * (i + 1)
-  puts "#{i} : suma: #{suma}"
+  suma = suma + 2*(i+1)
+  puts "el #{i} suma par:  #{suma}"
 end
-puts " suma final : #{suma}"
+puts "suma final: #{suma}"

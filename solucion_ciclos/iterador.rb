@@ -2,18 +2,20 @@
 
 # --- esto tenemos que camabiar por times 
 
-=begin
-i = 0
-while i < 50
-  puts "Iteración #{i}"
-  i = i + 1
-end
 
-=end 
+# i = 0
+# while i < 50
+#   puts "Iteración #{i+1}"
+#   i = i + 1
+# end
+
 
 # ----- solución convirtiendo lo mismo pero con times 
 
 
-50.times do |i|
-  puts "iteración #{i}"
-end 
+n = ARGV[0].to_i
+
+n.times do |i|
+  puts "interación #{i+1}"
+end
+

@@ -4,16 +4,21 @@ tres   = ARGV[2].to_i
 cuatro = ARGV[3].to_i
 
 if ARGV[3] != nil?
+  # cuando es uno es mayor que todos
   if uno >= dos && uno >= tres && uno >= cuatro
     puts uno
+  # cuando dos  es mayor que todos
   elsif dos >= uno && dos >= tres && dos >= cuatro
     puts dos
+  # cuando tres sea mayor que todos 
   elsif tres >= uno && tres >= dos && tres >= cuatro
     puts tres
   else
     puts cuatro
   end
+
 else
+
   if uno >= dos && uno >= tres
     puts uno
   elsif dos >= uno && dos >= tres

@@ -43,12 +43,15 @@
 
 #--------- solucion Opción 2
 n = ARGV[0].to_i
+#parte superior
 p1 = "*" * n
 p2 = "*" + " " * (n - 2) + "*"
 puts p1
+#parte del medio
 (n - 2).times do |i|
   puts p2
 end
+#parte inferior 
 puts p1
 
 

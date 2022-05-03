@@ -8,7 +8,8 @@
 # *****
 
 # ----- solución 
-
+# puts "ingresa un numero"
+# n = gets.chomp.to_i
 n = ARGV[0].to_i
 
 # parte superior 
@@ -16,38 +17,23 @@ print "*"*n
 puts ""
 
 # parte medio  
-def medio(n)
-  # (n-2).times do |i|
-  #   n.times do |j|
-  #     if (j < n / 2) || (j > n / 2)
-  #       print " "
-  #     else
-  #       print "*"
-  #     end
-  #   end
-  #   print "\n"
-  # end
 
   (n-2).times do |i|
     n.times do |j|
-      if (j < n/2) || (j > n/2)
-        print " "
+      if (j < n/2) || (j> n/2)
+        print " " 
       else
         print "*"
-      end
-      
+      end 
     end
-    print "\n"
+    puts " "
   end
-end
+
+
 
 # Parte inferior 
-def inferior(n)
-  n.times do |i|
-    print "*"
-  end
-    print "\n"
-end
+print "*"*n
+puts " "
 
-medio(n)
-inferior(n)
+
+

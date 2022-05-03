@@ -11,8 +11,14 @@ end
 
 # ---- solución opción 2 
 
-puts "ingrese la cantida de numeros pares que quieres obtener "
-n = gets.chomp.to_i
+# puts "ingrese la cantida de numeros pares que quieres obtener "
+# n = gets.chomp.to_i
+# n.times do |i|
+#   puts "Nº #{i} es: #{2*i} "
+# end 
+# metodo para saber si es par= .even? y si es impar= .odd?
+n = ARGV[0].to_i
+
 n.times do |i|
-  puts "Nº #{i} es: #{2*i} "
-end 
+  puts i*2
+end
