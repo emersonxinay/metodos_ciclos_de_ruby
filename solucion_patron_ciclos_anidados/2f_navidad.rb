@@ -59,3 +59,32 @@ end
 puts " "
 
 
+# ------ solución con espacio en entre los arboles 
+
+# # ENTRADA 
+# lineas = ARGV[0].chomp.to_i # El número de líneas
+
+# # PROCESO
+# ## CASOD  DE PRUEBA 5
+# mitad = lineas / 2
+# puts mitad
+# lineas.times do |fila|
+#     lineas.times  do |columna|
+#         operacion = (mitad - columna).abs
+#         if operacion <= fila # 0 <= 1
+#             if operacion.even? and fila.even? # PAR
+#                 print '*'           
+#             elsif operacion.odd? and fila.odd?# IMPAR
+#                 print "*"
+#             else
+#                 print ' '
+#             end
+#         else
+#             print ' '
+#         end
+#     end
+#     puts
+# end
+
+
+
